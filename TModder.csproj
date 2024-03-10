@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Project Metadata -->
+  <PropertyGroup>
+    <OutputType>exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Authors>Minset</Authors>
+    <Description>A modding API for Terraria</Description>
+    <LangVersion>latest</LangVersion>
+    
+    <!-- Build Configuration -->
+    <Configuration>Debug</Configuration>
+    <Platform>AnyCPU</Platform>
+    <FileAlignment>512</FileAlignment>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <BaseAddress>0x00400000</BaseAddress>
+    <HighEntropyVA>true</HighEntropyVA>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>$(NoWarn);1591;1701;1702</NoWarn>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\Debug\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <UseWPF>false</UseWPF>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <UseApplicationTrust>false</UseApplicationTrust>
+  </PropertyGroup>
+
+  <!-- Project References -->
+  <ItemGroup>
+    <!-- Existing References -->
+    <Reference Include="tModLoader">
+      <HintPath>tModLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="FNA">
+      <HintPath>FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="ReLogic">
+      <HintPath>ReLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="TModderSettings">
+      <HintPath>TModderSettings.dll</HintPath>
+    </Reference>
+
+    <!-- NuGet Package References -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+
+    <!-- Content Files -->
+    <Content Include="Content\PixelShader.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ScreenShader.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sound Bank.xsb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\TerrariaMusic.xgs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\TileShader.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Wave Bank.xwb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <!-- Debugging and Execution Settings -->
+  <PropertyGroup>
+    <StartPage>http://localhost/</StartPage>
+    <StartAction>Program</StartAction>
+    <StartArguments>-arg1 -arg2</StartArguments>
+    <StartProgram>$(TargetPath)</StartProgram>
+    <StartWorkingDirectory>$(OutputPath)</StartWorkingDirectory>
+  </PropertyGroup>
+
+  <!-- Publishing Settings -->
+  <PropertyGroup>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <PublishSingleFile>false</PublishSingleFile>
+    <PublishReadyToRunShowWarnings>false</PublishReadyToRunShowWarnings>
+    <PublishReadyToRunUseCrossgen>false</PublishReadyToRunUseCrossgen>
+    <PublishReadyToRunEmitSymbols>false</PublishReadyToRunEmitSymbols>
+    <PublishReadyToRunTrimMode>Link</PublishReadyToRunTrimMode>
+  </PropertyGroup>
+
+</Project>
