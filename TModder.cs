@@ -5,6 +5,7 @@ using System.Diagnostics;
 using Terraria.ModLoader;
 using TModder.GameLauncher;
 using TModder.Interfaces;
+using TModder.TPatcher;
 
 namespace TModder
 {
