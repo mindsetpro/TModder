@@ -1,17 +1,22 @@
-// VERSION 1.0.0 // DO NOT EXPECT MUCH //
-         // Made by Mindset //
-
 using System;
 using System.IO;
 using System.Reflection;
+using System.Diagnostics;
 using Terraria.ModLoader;
 using TModder.GameLauncher;
 using TModder.Interfaces;
 
 namespace TModder
 {
+    /// <summary>
+    /// Main class for TModder application.
+    /// </summary>
     public class MainClass
     {
+        /// <summary>
+        /// Entry point of the application.
+        /// </summary>
+        /// <param name="args">Command-line arguments.</param>
         public static void Main(string[] args)
         {
             // Path to Terraria.exe and mod DLLs
@@ -28,19 +33,37 @@ namespace TModder
             LaunchGame();
         }
 
-        // Method to launch the game
+        /// <summary>
+        /// Method to launch the game.
+        /// </summary>
         private static void LaunchGame()
         {
             // Add custom menu
             AddCustomMenu();
 
             // Launch the embedded game
-            // This should be replaced with code to start the embedded game
-            Console.WriteLine("Launching the game...");
-            // GameLauncher.LaunchEmbeddedGame();
+            string embeddedGameExePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "TModder.Terraria.exe");
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                FileName = embeddedGameExePath,
+                UseShellExecute = false,
+                CreateNoWindow = false
+            };
+
+            Process embeddedGameProcess = Process.Start(startInfo);
+
+            // Wait for the embedded game to exit
+            embeddedGameProcess.WaitForExit();
+
+            // Once the embedded game exits, proceed with further actions
+            Console.WriteLine("The embedded game has exited.");
         }
 
-        // Method to handle the GameLaunched event
+        /// <summary>
+        /// Method to handle the GameLaunched event.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event arguments.</param>
         private static void OnGameLaunched(object sender, EventArgs e)
         {
             Console.WriteLine("Game launched event received.");
@@ -49,13 +72,17 @@ namespace TModder
             AddModManager();
         }
 
-        // Method to add a custom menu
+        /// <summary>
+        /// Method to add a custom menu.
+        /// </summary>
         private static void AddCustomMenu()
         {
             Console.WriteLine("Custom menu added.");
         }
 
-        // Method to add a mod manager in settings
+        /// <summary>
+        /// Method to add a mod manager in settings.
+        /// </summary>
         private static void AddModManager()
         {
             Console.WriteLine("Mod manager added to settings.");
