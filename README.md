@@ -15,3 +15,11 @@ A Simple Terraria Modding app made in CSHARP.
 | `Dark.v2`          | Releases (coming soon)                     |
 | `.iduckseverything` | Launcher Code                              |
 
+### contributations
+> ways to contribute
+> - Star and fork the Repo
+>   
+> - Report any issues
+>   
+> - Suggest stuff and read the wiki
+>
