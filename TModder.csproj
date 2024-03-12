@@ -38,6 +38,9 @@
     <Reference Include="tModLoader">
       <HintPath>tModLoader.dll</HintPath>
     </Reference>
+    <Reference Include="Terraria">
+      <HintPath>tModLoader.dll</HintPath>
+    </Reference>
     <Reference Include="FNA">
       <HintPath>FNA.dll</HintPath>
     </Reference>
@@ -50,32 +53,9 @@
     <Reference Include="0Harmony">
       <HintPath>0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="TModderSettings">
-      <HintPath>TModderSettings.dll</HintPath>
-    </Reference>
 
     <!-- NuGet Package References -->
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-
-    <!-- Content Files -->
-    <Content Include="Content\PixelShader.xnb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\ScreenShader.xnb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Sound Bank.xsb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\TerrariaMusic.xgs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\TileShader.xnb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Wave Bank.xwb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
   <!-- Debugging and Execution Settings -->
