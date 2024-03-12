@@ -10,4 +10,12 @@
 
 How to install
 ------
-coming soon as of today it is not ready.
+> `how to setup`
+> 
+> 1. get the release (when its out)
+>    
+> 2. get the exe and dll for TModder and the dll for TModLoader and FNA and Mono.Cecil and put it in the Terraria path
+>
+> 3. run the TModder.exe
+>
+> 4. mod the game!
