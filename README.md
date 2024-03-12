@@ -27,4 +27,4 @@ A Simple Terraria Modding app made in CSHARP.
 
 | Sponsor       | Link |
 |-------------------|-----------------------|
-| `Guzman estate and properties`|   [Discord](https://discord.gg/m7VFzSKX)        |
+| `Guzman estate and properties (GTA)` |   [Discord](https://discord.gg/f2HhT6DV)     |
