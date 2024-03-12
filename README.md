@@ -22,3 +22,9 @@ A Simple Terraria Modding app made in CSHARP.
 >   
 > - Suggest stuff and read the wiki
 >
+
+### Sponsors
+
+| Sponsor       | 
+|-------------------|
+| `Guzman estate and properties`           |
