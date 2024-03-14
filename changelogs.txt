@@ -1,0 +1,19 @@
+TModder v1.0.0 Changelog
+========================
+
+Features:
+---------
+- Added TModder functionality as an entry point and manager.
+- Loads and manages mods found in the Mods directory.
+- Compiles mods to .tmo format for use in Terraria.
+- Patches mods to integrate them seamlessly into the game.
+- Patches the title menu logo with the TModder logo.
+- Modifies interface layers to include mod management UI.
+
+Changes:
+---------
+- more simple and flexible
+
+Fixes:
+---------
+- compilation errors
