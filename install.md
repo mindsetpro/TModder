@@ -2,7 +2,7 @@
 
 | Platform          | Status                                     |
 |-------------------|--------------------------------------------|
-| Windows           | `✅`  only one so far                      |
+| Windows           |`❌` no coming soon though                  |
 | linux             | `❌` no coming soon though                 |
 | Mac os            | `❌` no may not ever be done.              |
 
@@ -19,3 +19,6 @@ How to install
 > 3. run the TModder.exe
 >
 > 4. mod the game!
+
+
+# THIS MAY BE CHANGED AFTER THIS IS RELEASED.
